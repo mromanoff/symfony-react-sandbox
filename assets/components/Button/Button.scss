@@ -1,0 +1,19 @@
+.Button {
+  outline: 0;
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+  background: orangered;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+
+
+  &:hover {
+    background: #AA3333;
+  }
+
+  &.Button--primary {
+    background: #81aa33;
+
+  }
+}

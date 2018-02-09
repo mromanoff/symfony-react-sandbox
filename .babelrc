@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 7"
+          ]
+        }
+      }
+    ],
+    "es2017"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-react-jsx",
+    "transform-class-properties",
+    "syntax-do-expressions"
+  ]
+}
