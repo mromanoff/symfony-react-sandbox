@@ -15,7 +15,11 @@ class ArticleController extends AbstractController
      */
     public function homepage()
     {
-        return new Response('OMG! My first page already! Wooo!');
+        $title = 'Home Page';
+
+        return $this->render('home/index.html.twig', [
+            'title' => $title
+        ]);
     }
 
     /**
@@ -34,7 +38,7 @@ class ArticleController extends AbstractController
             'title' => ucwords(str_replace('-', ' ', $slug)),
             'comments' => $comments,
 
-            ]);
+        ]);
 
     }
 

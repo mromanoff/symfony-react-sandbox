@@ -1,5 +1,45 @@
 body {
   color: #313131;
-  background: rgba(203, 201, 249, 0.62);
+  background: rgba(197, 211, 249, 0.62);
   font-family: sans-serif;
+}
+
+
+.app-header {
+  padding: 1rem 2rem;
+  height: 80px;
+  background: #344a5c;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.app-main {
+
+}
+
+
+.app-footer {
+  background: #16282f;
+  color: #C9C9C9;
+  padding: 1rem 2rem;
+  min-height: 100px;
+
+  a {
+    color: white;
+  }
+}
+
+.container {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.note {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: rgba(52, 74, 92, 0.5);
+  border: 1px solid #ccc;
 }

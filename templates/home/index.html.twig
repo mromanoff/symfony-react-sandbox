@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+
+{% set greeting = 'Hello ' %}
+{% set name = 'Me' %}
+{% set foo = { foo: 'bar' } %}
+
+
+{% set pagination %}
+    <div class="pagination">
+        <span class="pagination__item">
+            1
+        </span>
+        <span class="pagination__item">
+            2
+        </span>
+    </div>
+{% endset %}
+
+{% block main %}
+
+
+    {%  dump(_context) %}
+
+    <h1>{{ title }}</h1>
+
+    <p>{{ greeting ~ name|lower }}</p>   {# Hello fabien #}
+
+    {# use parenthesis to change precedence #}
+    <p>{{ (greeting ~ name)|lower }} {# hello fabien #}</p>
+
+
+    <p>{{ foo.foo }}</p>
+
+    {{ pagination }}
+
+
+    {% include '_some-partial.html.twig' with {'component': pagination } only%}
+
+{% endblock %}
